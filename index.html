@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MLTL - My Little Todo List</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="src/style.css">
+
+    <script src="src/app.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Todo List</a>
+            <!--<ul id="nav-mobile" class="left hide-on-med-and-down"></ul>-->
+        </div>
+    </nav>
+</header>
+<div class="container">
+   <div class="add_section">
+       <div class="row">
+           <form class="col s8">
+               <div class="row">
+                   <div class="input-field col s6">
+                       <input id="task_name" class="task_name" type="text" class="validate">
+                       <label class="active" for="task_name">Task Name</label>
+                   </div>
+                   <div class="input-field col s12">
+                       <textarea id="todo_text" class="materialize-textarea" placeholder="What to do.."></textarea>
+                   </div>
+                   <div class="col s12 right custom-right">
+                       <a class="btn-floating btn-large waves-effect waves-light red" id="save_task"><i class="material-icons">+</i></a>
+                   </div>
+               </div>
+           </form>
+       </div>
+   </div>
+    <div class="cards-section">
+        <div class="row" id="tasks">
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
